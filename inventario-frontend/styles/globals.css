@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables for colors used by the new UI */
+:root {
+	--background: 255 255 255;
+	--foreground: 17 24 39;
+
+	/* shadcn-like semantic tokens */
+	--card: 255 255 255;
+	--card-foreground: 17 24 39;
+	--popover: 255 255 255;
+	--popover-foreground: 17 24 39;
+	--primary: 59 130 246; /* blue-500 */
+	--primary-foreground: 255 255 255;
+	--secondary: 99 102 241; /* indigo-500 */
+	--secondary-foreground: 255 255 255;
+	--accent: 16 185 129; /* emerald-500 */
+	--accent-foreground: 255 255 255;
+	--muted: 243 244 246; /* gray-100 */
+	--muted-foreground: 107 114 128; /* gray-500 */
+	--border: 229 231 235; /* gray-200 */
+	--input: 229 231 235; /* gray-200 */
+	--ring: 59 130 246; /* blue-500 */
+}
+
+.dark {
+	--background: 17 24 39; /* gray-900 */
+	--foreground: 243 244 246; /* gray-100 */
+	--card: 31 41 55; /* gray-800 */
+	--card-foreground: 243 244 246;
+	--popover: 31 41 55;
+	--popover-foreground: 243 244 246;
+	--primary: 59 130 246;
+	--primary-foreground: 255 255 255;
+	--secondary: 99 102 241;
+	--secondary-foreground: 255 255 255;
+	--accent: 16 185 129;
+	--accent-foreground: 255 255 255;
+	--muted: 31 41 55;
+	--muted-foreground: 156 163 175; /* gray-400 */
+	--border: 55 65 81; /* gray-700 */
+	--input: 55 65 81;
+	--ring: 59 130 246;
+}
+
+@layer base {
+	* {
+	border-color: rgb(var(--border));
+	}
+	body {
+		color: rgb(var(--foreground));
+		background: rgb(var(--background));
+	}
+}
+
+@layer components {
+	.bg-card { background-color: rgb(var(--card)); }
+	.text-muted-foreground { color: rgb(var(--muted-foreground)); }
+	.bg-primary { background-color: rgb(var(--primary)); }
+	.text-primary-foreground { color: rgb(var(--primary-foreground)); }
+	.bg-secondary { background-color: rgb(var(--secondary)); }
+	.text-secondary-foreground { color: rgb(var(--secondary-foreground)); }
+	.bg-accent { background-color: rgb(var(--accent)); }
+	.text-accent-foreground { color: rgb(var(--accent-foreground)); }
+	.border { border-color: rgb(var(--border)); }
+}

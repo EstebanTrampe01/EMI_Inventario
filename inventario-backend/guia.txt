@@ -1,0 +1,41 @@
+---- Usuario -----
+
+...usuario
+isOwner: booleana
+
+------------------
+
+! Importante: Owner puede hacer lo mismo que lider en todos los grupos. 
+
+------------ Grupo ----------------------
+
+Grupo
+    - Toyota
+      - Usuarios (Lider, Admin, Usuario)
+    - Mazda
+      - Usuarios (Lider, Admin, Usuario)
+    - Kia
+      - Usuarios (Lider, Admin, Usuario)
+
+
+Propiedades
+- Nombre
+- Logo
+
+Un grupo tiene varios RolesDeGrupo
+
+OneToMany
+ManyToMany
+OneToOne
+
+----------- RolesDeGrupo -------------------
+
+
+Usuario
+Rol
+Grupo
+
+--------------------------------------------
+
+
+
