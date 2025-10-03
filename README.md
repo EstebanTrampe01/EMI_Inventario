@@ -1,4 +1,3 @@
-````markdown name=ARCHITECTURE.md url=https://github.com/EstebanTrampe01/DEMO_EMI/blob/main/ARCHITECTURE.md
 ```mermaid
 %% Diagrama de arquitectura para el repo EstebanTrampe01/DEMO_EMI
 %% Componentes inferidos a partir de:
